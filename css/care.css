@@ -1,0 +1,337 @@
+/* -------------------------------
+   General Reset
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------------------
+   Puppy Care Cards
+--------------------------------*/
+.puppy-care-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.puppy-card {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 260px;
+  max-width: 300px;
+  height: 320px;
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px #c3c8d1, -8px -8px 20px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.puppy-card .image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.6s ease;
+}
+
+.puppy-card .text {
+  padding: 15px;
+  text-align: center;
+}
+
+.puppy-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.puppy-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Hover Effects */
+.puppy-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 12px 12px 25px #c3c8d1, -12px -12px 25px #ffffff;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#e0e5ec, #e0e5ec),
+                    linear-gradient(135deg, #ff6ec7, #7366ff, #60efff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.puppy-card:hover .image {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* -------------------------------
+   Topic Cards
+--------------------------------*/
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 6px 6px 16px #c3c8d1, -6px -6px 16px #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.topic-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.6s ease;
+}
+
+.topic-body {
+  padding: 20px;
+  flex: 1;
+}
+
+.topic-body span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.topic-body h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.topic-body p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Hover Effects */
+.topic-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 10px 10px 22px #c3c8d1, -10px -10px 22px #ffffff;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#e0e5ec, #e0e5ec),
+                    linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.topic-card:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.15);
+}
+
+/* -------------------------------
+   Modal Styling (Custom Look)
+--------------------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #e0e5ec;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 8px 8px 20px #c3c8d1, -8px -8px 20px #ffffff;
+  animation: fadeIn 0.4s ease;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.modal-content .close {
+  padding: 8px 16px;
+  background: #7366ff;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-content .close:hover {
+  background: #ff6ec7;
+}
+
+/* -------------------------------
+   Animations
+--------------------------------*/
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* -------------------------------
+   Responsive
+--------------------------------*/
+@media (max-width: 992px) {
+  .puppy-card {
+    flex: 1 1 calc(50% - 20px);
+    height: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .puppy-card {
+    flex: 1 1 100%;
+    height: 260px;
+  }
+  .topic-card img {
+    height: 160px;
+  }
+}
+
+.modal {
+  display: none;               /* hidden by default */
+  position: fixed;
+  inset: 0;                    /* top:0; right:0; bottom:0; left:0 */
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+
+  /* Centering modal content */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal.active {
+  display: flex; /* show when active */
+}
+
+.modal-content {
+  background: #e0e5ec;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 8px 8px 20px #c3c8d1, -8px -8px 20px #ffffff;
+  animation: fadeIn 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+.blog-section {
+  background-color:#ffe595;
+;   /* orange background */
+  padding: 60px 20px;         /* thoda spacing andar */
+  border-radius: 12px;        /* halka rounded corners */
+}
+  .site-footer {
+  padding: 15px 0;   /* kam height */
+  background: #222;  /* optional */
+  color: #fff;
+}
+
+.site-footer h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.site-footer p,
+.site-footer li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.site-footer .footer-social li {
+  margin-right: 5px;
+}
+/* Universal Advanced Headings */
+h1, h2, h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: clamp(24px, 5vw, 42px); /* responsive size */
+  background-image: linear-gradient(90deg, #f4b214, #ff6f61, #6a11cb, #2575fc);
+  background-size: 300%;
+  color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  animation: headingGlow 3s infinite alternate, gradientShift 6s linear infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Neon Glow Animation */
+@keyframes headingGlow {
+  from {
+    text-shadow: 0 0 10px rgba(244,178,20,0.6),
+                 0 0 20px rgba(255,111,97,0.4);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(106,17,203,0.8),
+                 0 0 40px rgba(37,117,252,0.6);
+  }
+}
+
+/* Underline Animation */
+h1::after, h2::after, h3::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  margin: 10px auto 0;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #f4b214, #ff6f61);
+  animation: underlineGrow 1.6s forwards ease-out;
+}
+
+@keyframes underlineGrow {
+  from { width: 0; }
+  to { width: 120px; }
+}
+
+/* Shine Reflection Effect */
+h1::before, h2::before, h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.25), rgba(255,255,255,0));
+  transform: skewX(-25deg);
+  animation: shineHeading 4s infinite;
+}
+
+@keyframes shineHeading {
+  0% { left: -120%; }
+  60% { left: 130%; }
+  100% { left: 130%; }
+}

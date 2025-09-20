@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>Patrona Puppy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+  
+  <script src="js/jquery-3.5.1.min.js"></script>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link href="register/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+
+<body class="bg-dark text-light">
+
+  <header role="banner">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand absolute" href="index.html"><img src="img/logo.svg" width="20%"
+            style="padding-right: 10px;">patrona puppy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav mx-auto pl-lg-5 pl-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="breed.html">Breeds</a></li>
+            <li class="nav-item"><a class="nav-link" href="countries.html">Country</a></li>
+            <li class="nav-item"><a class="nav-link" href="types.html">Types</a></li>
+            <li class="nav-item"><a class="nav-link" href="puppy_care.html">Puppy care</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQs.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a> </li>
+    
+          </ul>
+        
+      
+    </nav>
+  </header>
+  <!-- END header -->
+
+  <!--Trigger-->
+
+  <section class="home-slider owl-carousel">
+    <div class="slider-item" style="background-image: url('img/slider_contact.jpg');">
+
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h1>More than just a website.</h1>
+
+            <p class="mb-5">Let make something awesome together. <br> Stop by and say "Hi".
+              <br>
+              Or drop us a note</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END slider -->
+
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+  
+        <!-- Contact Form -->
+<div class="col-lg-7 col-md-12">
+  <form onsubmit="return contactus()" class="p-3 contact-form glass-card">
+    <h2 class="section-title text-center mb-4">
+      <i class="bi bi-envelope-paper"></i> Contact Us
+    </h2>
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name">
+      <small id="nameError" class="text-danger"></small>
+    </div>
+    
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="text" id="phone" class="form-control" placeholder="Enter your mobile number">
+      <small id="phoneError" class="text-danger"></small>
+    </div>
+    
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" class="form-control" placeholder="Enter your email">
+      <small id="emailError" class="text-danger"></small>
+    </div>
+    
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea id="message" class="form-control" placeholder="Enter your message"></textarea>
+      <small id="messageError" class="text-danger"></small>
+    </div>
+    
+    <button type="submit" class="btn btn-success">
+      <i class="bi bi-send-fill"></i> Submit
+    </button>
+  </form>
+</div>
+  
+        <!-- Find Us -->
+        <div class="col-lg-5 col-md-12">
+          <div class="contact-info glass-card p-4 h-100">
+            <h2 class="section-title text-center mb-4">
+              <i class="bi bi-geo-alt-fill"></i> Find Us
+            </h2>
+  
+            <div class="map-container mb-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14472.609562596419!2d67.0167235554199!3d24.926878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1755547504569!5m2!1sen!2s"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+  
+            <ul class="list-unstyled contact-details">
+              <li class="contact-item"><i class="bi bi-geo-alt"></i> Aptech North Nazimabad</li>
+              <li class="contact-item"><i class="bi bi-telephone"></i> +92 340 3354272</li>
+              <li class="contact-item"><i class="bi bi-envelope"></i> PatronaFive@outlook.com
+</li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+ 
+        <!-- END slider -->
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+
+  <!-- start footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row mb-2"> <!-- mb-5 → mb-2 -->
+        
+        <!-- About Section -->
+        <div class="col-md-4 mb-2">
+          <h3>About Patrona Puppy</h3>
+          <p class="mb-2">
+            This website is created by a veteran who wishes to share stories about the dogs she has met and studied. 
+            It is also a place for dog lovers who want to learn more about these amazing creatures.
+          </p>
+          <ul class="list-unstyled footer-link d-flex footer-social">
+            <li><a href="https://x.com/imobaidafridi" target="_blank" class="p-2"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/imobaidafridi" target="_blank" class="p-2"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://pk.linkedin.com/in/ubaid-ur-rehman-48b41728b" target="_blank" class="p-2"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/imubaidafridi/" target="_blank" class="p-2"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-5 mb-2">
+          <h3>Contact Info</h3>
+          <ul class="list-unstyled footer-link">
+            <li><span class="d-block">Address:</span><span class="text-white">Aptech North Nazimabad</span></li>
+            <li><span class="d-block">Telephone:</span><span class="text-white">+92 340 3354272</span></li>
+            <li><span class="d-block">Email:</span><span class="text-white">PatronaFive@outlook.com
+</span></li>
+          </ul>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-2">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled footer-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breed.html">Breeds</a></li>
+            <li><a href="countries.html">Countries</a></li>
+            <li><a href="types.html">Types</a></li>
+            <li><a href="puppy_care.html">Puppy Care</a></li>
+            <li><a href="FAQs.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Footer Bottom -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>&copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by Patrona Five
+</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- END footer -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#f4b214" /></svg></div>
+
+  
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="json/data_dog.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</body>
+
+</html>
+<script>
+  function Wefunction() {
+    var username = document.getElementById("username").value.trim();
+    var password = document.getElementById("password").value.trim();
+
+    var usernameError = document.getElementById("usernameError");
+    var passwordError = document.getElementById("passwordError");
+
+    usernameError.innerText = "";
+    passwordError.innerText = "";
+    usernameError.className = "";
+    passwordError.className = "";
+
+    var usernameRegex = /^[A-Za-z0-9@]+$/;
+    if (username == "" || !usernameRegex.test(username)) {
+      usernameError.innerText = "Username can only contain letters, numbers, and '@'.";
+      usernameError.classList.add("error");
+      return false;
+    } else {
+      usernameError.innerText = "Username looks good.";
+      usernameError.classList.add("success");
+    }
+
+    if (password == "") {
+      passwordError.innerText = "Please enter your password.";
+      passwordError.classList.add("error");
+      return false;
+    } else {
+      passwordError.innerText = "Password entered.";
+      passwordError.classList.add("success");
+    }
+
+    alert('Login Success!\nLets explore the website more!');
+    document.location = 'index.html';
+    return true;
+  }
+
+  function contactus() {
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    var nameError = document.getElementById("nameError");
+    var phoneError = document.getElementById("phoneError");
+    var emailError = document.getElementById("emailError");
+    var messageError = document.getElementById("messageError");
+
+    // Reset
+    [nameError, phoneError, emailError, messageError].forEach(el => {
+      el.innerText = "";
+      el.className = "";
+    });
+
+    // Name Validation
+    var nameRegex = /^[A-Z][a-zA-Z\s]*$/;
+    if (!nameRegex.test(name)) {
+      nameError.innerText = "Name must start with a capital letter and contain only letters.";
+      nameError.classList.add("error");
+      return false;
+    } else {
+      nameError.innerText = "Name is valid.";
+      nameError.classList.add("success");
+    }
+
+    // Phone Validation (7 to 11 digits only)
+    var phoneRegex = /^[0-9]{7,11}$/;
+    if (!phoneRegex.test(phone)) {
+      phoneError.innerText = "Phone number must contain only 7 to 11 digits.";
+      phoneError.classList.add("error");
+      return false;
+    } else {
+      phoneError.innerText = "Phone number looks good.";
+      phoneError.classList.add("success");
+    }
+
+    // Email Validation
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      emailError.innerText = "Please enter a valid email address.";
+      emailError.classList.add("error");
+      return false;
+    } else {
+      emailError.innerText = "Email format is correct.";
+      emailError.classList.add("success");
+    }
+
+    // Message Validation
+    if (message.length < 20) {
+      messageError.innerText = "Message must be at least 20 characters long.";
+      messageError.classList.add("error");
+      return false;
+    }
+    if (message.length > 200) {
+      messageError.innerText = "Message must not exceed 200 characters.";
+      messageError.classList.add("error");
+      return false;
+    } else {
+      messageError.innerText = "Message length is good.";
+      messageError.classList.add("success");
+    }
+
+    alert('Thank you, we will get back to you soon!\nLets explore the website more!');
+    document.location = 'index.html';
+    return true;
+  }
+</script>
